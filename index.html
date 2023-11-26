@@ -8,10 +8,41 @@
 <body>
     <div class="title">
         <div class="inner-container">
-            <img class="img" alt="Group 1" src="Group 1.jpg">
+            <div class="img-container">
+                <img class="img" alt="Group 1" src="00_header.png">
+            </div>
 
-            <a href="#">안녕하세요</a>
+            <div class="img-container">
+                <img class="img" alt="Group 1" src="01_main.png">
+            </div>
 
+            <div class="img-container" style="position: relative;">
+                <img class="img" alt="Group 1" src="02_body.png">
+                <img class="gif gif_01" src="231127_iWaver_gif_04.gif" style="position: absolute" alt="설명 텍스트">
+
+            </div>
+
+            <div class="img-container" style="position: relative;">
+                <img class="img" alt="Group 1" src="03_body.png">
+                <img class="gif gif_02 shadow" alt="Group 1" src="231127_iWaver_gif_01.gif">
+            </div>
+            
+            <div class="img-container" style="position: relative;">
+                <img class="img" alt="Group 1" src="04_body.png">
+                <img class="gif gif_03 shadow" alt="Group 1" src="231127_iWaver_gif_02.gif">
+            </div>
+            
+            <div class="img-container" style="position: relative;">
+                <img class="img" alt="Group 1" src="05_body.png">
+                <img class="gif gif_03 shadow" alt="Group 1" src="231127_iWaver_gif_03.gif">
+            </div>
+            
+            <div class="img-container" style="position: relative;">
+                <img class="img" alt="Group 1" src="06_body.png">
+                <img class="gif gif_05 shadow" alt="Group 1" src="231127_iWaver_gif_05.gif">
+            </div>
+
+            <img class="img" alt="Group 1" src="07_end.png">
         </div>
 
     </div>
@@ -24,13 +55,58 @@
     }
     .inner-container {
         position: relative;
-    width: 100%;
-    margin: 0 auto;
+        max-width: 1920px;
+        margin: 0 auto;
     }
 
     .img {
         width: 100%;
     }
+
+    .gif {
+        border-radius: 11px;
+    }
+
+    .shadow {
+        box-shadow: 0px 20px 40px 0px rgba(3, 18, 63, 0.15);
+    }
+
+    .gif_01 {
+        position: absolute;
+        top: 33.5%;
+        left: 47.5%;
+        width: 25%;
+    }
+
+    .gif_02 {
+        position: absolute;
+        top:66%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 49%;
+    }
+
+    .gif_03 {
+        position: absolute;
+        top:47%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 49%;
+    }
+
+    .gif_05 {
+        position: absolute;
+        top:57%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 49%;
+    }
+
+</style>
+
+
+
+
 
 </style>
 </html>
