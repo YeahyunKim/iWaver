@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iWaver</title>
 
-    <link rel="icon" href="Icon.png"/>
-    <link rel="apple-touch-icon" href="Icon.png"/>
+    <link rel="icon" href="Icon.png" />
+    <link rel="apple-touch-icon" href="Icon.png" />
 </head>
+
+
 <body style="margin: 0;">
-    <div class="title">
+    <div class="title pc">
         <div class="inner-container">
             <div class="img-container">
                 <img class="img" alt="Group 1" src="00_header.png">
@@ -29,17 +32,17 @@
                 <img class="img" alt="Group 1" src="03_body.png">
                 <img class="gif gif_02 shadow" alt="Group 1" src="231127_iWaver_gif_01-min.gif">
             </div>
-            
+
             <div class="img-container" style="position: relative;">
                 <img class="img" alt="Group 1" src="04_body.png">
                 <img class="gif gif_03 shadow" alt="Group 1" src="231127_iWaver_gif_02-min.gif">
             </div>
-            
+
             <div class="img-container" style="position: relative;">
                 <img class="img" alt="Group 1" src="05_body.png">
                 <img class="gif gif_03 shadow" alt="Group 1" src="231127_iWaver_gif_03-min.gif">
             </div>
-            
+
             <div class="img-container" style="position: relative;">
                 <img class="img" alt="Group 1" src="06_body.png">
                 <img class="gif gif_05 shadow" alt="Group 1" src="231127_iWaver_gif_05-min.gif">
@@ -49,8 +52,24 @@
         </div>
 
     </div>
-    
+
 </body>
+
+
+<script>
+    var filter = "win16|win32|win64|mac|macintel";
+    if (navigator.platform) {
+        if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+            //mobile 
+            alert('mobile 접속');
+        } else {
+            //pc 
+            alert('pc 접속');
+            document.querySelector(".pc").style.display = 'none';
+        }
+    }
+
+</script>
 
 <style>
     .title {
@@ -89,7 +108,7 @@
 
     .gif_02 {
         position: absolute;
-        top:66%; 
+        top: 66%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 49%;
@@ -97,7 +116,7 @@
 
     .gif_03 {
         position: absolute;
-        top:47%; 
+        top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 49%;
@@ -105,11 +124,11 @@
 
     .gif_05 {
         position: absolute;
-        top:57%; 
+        top: 57%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 49%;
     }
-
 </style>
+
 </html>
