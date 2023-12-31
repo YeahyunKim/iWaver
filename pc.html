@@ -5,73 +5,47 @@
 
 <body style="margin: 0;">
     <!-- pc -->
-
-
-
-    <div id = "content">
-
-    </div>
-
-
-
-    <div id = "content" class="title pc">
+    <div class="pc title">
         <div class="inner-container">
             <div class="img-container">
-                <img class="img" alt="Group 1" src="pc/00_header.png">
+                <img class="img" alt="PDF를 Numbers로 손쉽게, iWaver" src="pc/00_header.png">
             </div>
 
             <div class="img-container">
-                <img class="img title" alt="Group 1" src="pc/01_main.png">
+                <img class="img title" alt="나만의 학습지가 필요한 순간" src="pc/01_main.png">
             </div>
 
-            <div class="img-container" style="position: relative;">
-                <img class="img" alt="Group 1" src="pc/02_body.png">
-                <img class="gif gif_01" src="231127_iWaver_gif_04-min.gif" style="position: absolute" alt="설명 텍스트"></div>
+            <div class="img-container">
+                <img class="img" alt="간편해진 작업 바쁜 당신에게 최적의 편집 경험" src="pc/02_body.png">
+                <img class="gif gif_01" src="/gif/231127_iWaver_gif_04-min.gif"></div>
             </div>
 
-            <div class="img-container" style="position: relative;">
-                <img class="img" alt="Group 1" src="pc/03_body.png">
-                <img class="gif gif_02 shadow" alt="Group 1" src="231127_iWaver_gif_01-min.gif">
+            <div class="img-container">
+                <img class="img" alt="과정 자동화 클릭 몇 번으로 나의 그림을 펼치다" src="pc/03_body.png">
+                <img class="gif gif_02 shadow" src="/gif/231127_iWaver_gif_01-min.gif">
             </div>
 
-            <div class="img-container" style="position: relative;">
-                <img class="img" alt="Group 1" src="pc/04_body.png">
-                <img class="gif gif_03 shadow" alt="Group 1" src="231127_iWaver_gif_02-min.gif">
+            <div class="img-container">
+                <img class="img" alt="작업 환경이 변해도 익숙함은 그대로" src="pc/04_body.png">
+                <img class="gif gif_03 shadow" src="/gif/231127_iWaver_gif_02-min.gif">
             </div>
 
-            <div class="img-container" style="position: relative;">
-                <img class="img" alt="Group 1" src="pc/05_body.png">
-                <img class="gif gif_03 shadow" alt="Group 1" src="231127_iWaver_gif_03-min.gif">
+            <div class="img-container">
+                <img class="img" alt="한번 경험해보면 재사용률 100%" src="pc/05_body.png">
+                <img class="gif gif_03 shadow" src="/gif/231127_iWaver_gif_03-min.gif">
             </div>
 
-            <div class="img-container" style="position: relative;">
-                <img class="img" alt="Group 1" src="pc/06_body.png">
-                <img class="gif gif_05 shadow" alt="Group 1" src="231127_iWaver_gif_05-min.gif">
+            <div class="img-container">
+                <img class="img" alt="모든 이미지를 한번에 편집할 수 있어요" src="pc/06_body.png">
+                <img class="gif gif_04 shadow" src="/gif/231127_iWaver_gif_05-min.gif">
             </div>
 
-            <img class="img" alt="Group 1" src="pc/07_end.png">
+            <img class="img" alt="한번 경험해보면 재사용률 100%" src="pc/07_end.png">
         </div>
 
     </div>
 
 </body>
-
-
-<script>
-    // var filter = "win16|win32|win64|mac|macintel";
-    // if (navigator.platform) {
-    //     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-    //         //mobile 
-    //         // alert('mobile 접속');
-    //         document.querySelector(".pc").style.display = 'none';
-    //     } else {
-    //         //pc 
-    //         // alert('pc 접속');
-    //         document.querySelector(".mobile").style.display = 'none';
-    //     }
-    // }
-
-</script>
 
 <style>
     .pc .title {
@@ -80,6 +54,7 @@
 
     .pc .img-container {
         font-size: 0px;
+        position: relative;
     }
 
     .pc .inner-container {
@@ -94,6 +69,7 @@
     }
 
     .pc .gif {
+        position: absolute;
         border-radius: 11px;
     }
 
@@ -102,14 +78,12 @@
     }
 
     .pc .gif_01 {
-        position: absolute;
         top: 33.5%;
         left: 47.5%;
         width: 25%;
     }
 
     .pc .gif_02 {
-        position: absolute;
         top: 66%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -117,15 +91,13 @@
     }
 
     .pc .gif_03 {
-        position: absolute;
         top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 49%;
     }
 
-    .pc .gif_05 {
-        position: absolute;
+    .pc .gif_04 {
         top: 57%;
         left: 50%;
         transform: translate(-50%, -50%);
